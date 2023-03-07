@@ -10,9 +10,16 @@ public class User {
     @Id
     @GeneratedValue(generator = "inc")
     @GenericGenerator(name = "inc", strategy = "increment")
+    @Column(name="id")
     private long id;
+
+    @Column(name="username")
     private String username;
+
+    @Column(name="password")
     private String password;
+
+    @Column(name="role")
     private String role;
 
     public User() {
@@ -22,6 +29,10 @@ public class User {
         this.username = username;
         this.password = password;
         this.role = role;
+    }
+
+    public long getId() {
+        return id;
     }
 
     public String getUsername() {
@@ -34,6 +45,10 @@ public class User {
 
     public String getRole() {
         return role;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public void setUsername(String username) {
