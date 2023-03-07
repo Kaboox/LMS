@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+
+.container {
+    position: relative;
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    margin-top: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+}
+
+.container h2 {
+    margin-left: 33%;
+    margin-top: 9%;
+}
+
+.inputs {
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 15%;
+}
+
+.pass {
+    margin-top: 8%;
+}
+
+.submit {
+    margin-top: 13%;
+    margin-left: 23%;
+    width: 140px;
+    height: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border-radius: 8px;
+}
+
+.submit:hover {
+    background-color: wheat;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h2>LOGIN</h2>
+            <div class="inputs">
+                <h3>Username:</h3>
+                <input type="text" name="login" id="" placeholder="username">
+                <div class="pass">
+                    <h3>Password:</h3>
+                    <input type="password" name="password" placeholder="password">
+                    <button class="submit" value="Submit">login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
